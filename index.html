@@ -5,8 +5,12 @@
     <title>Hello World!</title>
   </head>
   <body>
-    <h1>💖 Hello World!</h1>
-    <p>Welcome to your Electron application.</p>
+    <!-- Everything visible lives in #clippy. The window is resized to fit it,
+         so no transparent margin is left around it to block clicks. -->
+    <div id="clippy">
+      <h1>💖 Hello World!</h1>
+      <p>Welcome to your Electron application.</p>
+    </div>
     <script type="module" src="/src/renderer.ts"></script>
   </body>
 </html>
